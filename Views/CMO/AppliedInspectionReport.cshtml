@@ -1,0 +1,101 @@
+﻿@model CCSHealthFamilyWelfareDept.Models.InspectionType
+@{
+    ViewBag.Title = "AppliedInspectionReport";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using CCSHealthFamilyWelfareDept.Models
+@{
+    SessionManager SM = new SessionManager();
+    PermissionModel objPerm = new PermissionModel();
+    objPerm = PermissionLinks.LinkPermission(Session["UserPermission"] as List<PermissionModel>, Convert.ToInt32(AbbrServiceName.AGC));
+}
+<div class="content-title">
+    <h3 class="main-title">
+        <div class="col-md-12 text-left">शिकायत निरीक्षण का पंजीकरण<span class="small display-block">Complaint Inspections Application</span></div>
+    </h3>
+</div>
+
+<div id="content" class="dashboard padding-20 margin-bottom-50">
+    @if (objPerm.IsSrvProcessPer || SM.RollID == 2)
+    {
+        <h4 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">Application Process</h4>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="circle">
+                    <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#" class="red">
+                            <img src="@Url.Content("~/images/womens-health.png")">
+                            1. कुल निरीक्षण 
+                      <span class="nmicon2">Total Inspections</span>
+                            <span class="nmicon badge">@Model.totalInspection</span> </a></li>
+                    <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#" class="red">
+                            <img src="@Url.Content("~/images/womens-health.png")">
+                            2. कुल सूचना
+                      <span class="nmicon2">Total Notice </span>
+                            <span class="nmicon badge">@Model.totalNotice</span> </a></li>
+                    <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#" class="indigo">
+                            <img src="@Url.Content("~/images/immunizations.png")">
+                            3. कुल सील आदेश
+                      <span class="nmicon2">Total Seal Order  </span>
+                            <span class="nmicon badge">@Model.totalSealOrder</span> </a></li>
+                    <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#" class="cyan">
+                            <img src="@Url.Content("~/images/registration.png")">
+                            4. कुल एफआईआर
+                      <span class="nmicon2">Total FIR </span>
+                            <span class="nmicon badge">@Model.totalFIR</span> </a></li>
+
+                        <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#" class="cyan">
+                            <img src="@Url.Content("~/images/registration.png")">
+                            5. कुल लाइसेंस खारिज
+                      <span class="nmicon2">Total License Rejected </span>
+                            <span class="nmicon badge">@Model.TotalLicenseRejected</span> </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+    }
+    @if (objPerm.IsSrvApplyPer || SM.RollID == 2)
+    {
+        <h4 style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">Application Form - Counter Registration</h4>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="circle">
+                    <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="@Url.Action("CMOInvestigationReport", "CMO")" class="red">
+                            <img src="@Url.Content("~/images/womens-health.png")">
+                            New Inspection Report Application </a></li>
+                 @*   <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="@Url.Action("ViewAGCInComplete", "AppRegistration")" class="red">
+                            <img src="@Url.Content("~/images/womens-health.png")">
+                            Incomplete Application </a></li>*@
+                  @*  <li class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="@Url.Action("ViewAGCComplete", "AppRegistration")" class="indigo">
+                            <img src="@Url.Content("~/images/immunizations.png")">
+                            Complete Application </a></li>*@
+                </ul>
+            </div>
+        </div>
+    }
+    @if (objPerm.IsSrvReportPer || SM.RollID == 2)
+    {
+    }
+</div>
+<div class="clearfix"></div>
+        <script type="text/javascript">
+            $(function () {
+
+                if ('@ViewBag.Msg' != '' && '@ViewBag.MsgStatus' != '') {
+
+
+          swal("", "@ViewBag.Msg", "@ViewBag.MsgStatus");
+      }
+  });
+</script>

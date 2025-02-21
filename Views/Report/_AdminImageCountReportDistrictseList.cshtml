@@ -1,0 +1,93 @@
+﻿@model List<CCSHealthFamilyWelfareDept.Models.NUHDetailsModel>
+@using OTPL_Imp
+
+@using CCSHealthFamilyWelfareDept.Models;
+@{
+    int rowSpan = 1, rowSpan1 = 1;
+    int sNo = 0;
+    SessionManager SM = new SessionManager();
+    
+}
+
+
+
+
+
+
+@if (Model != null && Model.Count() > 0)
+{
+        
+    <div class="row">
+      
+            <table id="tblCountList1" border="1" class="table-user-information table table-bordered table-striped" cellpadding="2" cellspacing="0" width="100%" style="font-size: 13px;">
+                <thead style="background: #237382; color: #fff; padding: 5px;">
+                    <tr>
+                        <th>Sr.No.</th>
+                        <th>District</th>
+                        <th class="no-sort"><strong>Total Application</strong></th>
+                        <th class="no-sort"><strong>Uploaded</strong></th>
+                        <th class="no-sort"><strong>Remaining</strong></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            sNo++;
+                        <tr>
+                            <td style="text-align: center;">@sNo</td>
+                            <td>@item.DistrictName</td>
+                            <td style="text-align: center;">@Html.Raw(item.TotalCount > 0 ? "<a href=" + @Url.Action("UploadImageApplicationCountListNUH", "Report", new { StatusValue = @OTPL_Imp.CustomCryptography.Encrypt("0") ,DistrictId = @OTPL_Imp.CustomCryptography.Encrypt(item.districtid.ToString())}) + ">" + item.TotalCount + "</a>" : item.TotalCount.ToString())</td>
+                            <td style="text-align: center;">@Html.Raw(item.TotalUpload > 0 ? "<a href=" + @Url.Action("UploadImageApplicationCountListNUH", "Report", new { StatusValue = @OTPL_Imp.CustomCryptography.Encrypt("1") ,DistrictId = @OTPL_Imp.CustomCryptography.Encrypt(item.districtid.ToString()) }) + ">" + item.TotalUpload + "</a>" : item.TotalUpload.ToString())</td>
+
+                            <td style="text-align: center;">@Html.Raw(item.TotalRemaining > 0 ? "<a href=" + @Url.Action("UploadImageApplicationCountListNUH", "Report", new { StatusValue = @OTPL_Imp.CustomCryptography.Encrypt("2") ,DistrictId = @OTPL_Imp.CustomCryptography.Encrypt(item.districtid.ToString()) }) + ">" + item.TotalRemaining + "</a>" : item.TotalRemaining.ToString())</td>
+
+
+                        </tr>                          
+                        }
+                        <tr id="totalRow">
+
+
+
+
+                            <td rowspan="@rowSpan" style="text-align: center;"></td>
+                            <td rowspan="@rowSpan"><strong>Total</strong></td>
+
+
+
+                            <td style="text-align: center;">@Model.Sum(i => i.TotalCount)</td>
+                            <td style="text-align: center;">@Model.Sum(i => i.TotalUpload)</td>
+                            <td style="text-align: center;">@Model.Sum(i => i.TotalRemaining)</td>
+
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td>Record Not Found</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+     
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-12">
+            <span class="text-danger form-control" style="font-weight: 600; font-size: 18px;">No record found !</span>
+        </div>
+    </div>
+}
+
+
+
+
+
+
+
+

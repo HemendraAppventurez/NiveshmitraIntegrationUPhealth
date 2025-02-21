@@ -1,0 +1,92 @@
+﻿model List<CCSHealthFamilyWelfareDept.Models.IPCModelResponce>
+@{
+    int rowSpan = 1, rowSpan1 = 1, sNo = 0;
+    string preValue = "", preValue1 = "";
+}
+@using CCSHealthFamilyWelfareDept.Models
+@{
+    SessionManager SM = new SessionManager();
+    
+}
+<table class="table table-bordered table-striped" style="border-collapse: collapse;" border="1">
+    <thead>
+        <tr>
+            <th style="width: 5%; text-align: center;">S.No.</th>
+          @*  <th>Service Name</th>*@
+            <th>District</th>
+
+            <th style="width: 12%; text-align: center;">Total Inspection</th>
+            <th style="width: 5%; text-align: center;">Notice</th>
+            <th style="width: 5%; text-align: center;">FIR</th>
+            <th style="width: 17%; text-align: center;">Seal Order</th>
+            <th style="width: 18%; text-align: center;">Licence Rejection</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count > 0)
+        {
+
+            foreach (var item in Model)
+            { 
+            <tr>
+                @if (preValue != item.DistrictName)
+                {
+                    sNo++;
+                  
+                    <td style="text-align: center;">@sNo</td>
+                }
+                <td>
+                    @item.DistrictName
+
+                </td>
+
+                 <td style="text-align: center;">@Html.Raw(item.totalInspection > 0 ? "<a href=" + @Url.Action("CMOSRVCountReportDistrictServiceListCMOCHCPHC", "Report", new {rollId=@OTPL_Imp.CustomCryptography.Encrypt(@item.rollId.ToString()),  appCurrStatus = @OTPL_Imp.CustomCryptography.Encrypt("0"), districtId = @OTPL_Imp.CustomCryptography.Encrypt(@item.DistrictId.ToString()), userId = @OTPL_Imp.CustomCryptography.Encrypt("0") ,fromDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.fromDate.ToString()), toDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.toDate.ToString())  }) + ">" + item.totalInspection + "</a>" : item.totalInspection.ToString())</td>
+                                <td style="text-align: center;">@Html.Raw(item.totalNotice > 0 ? "<a href=" + @Url.Action("CMOSRVCountReportDistrictServiceListCMOCHCPHC", "Report", new {rollId=@OTPL_Imp.CustomCryptography.Encrypt(@item.rollId.ToString()), appCurrStatus = @OTPL_Imp.CustomCryptography.Encrypt("1"),  districtId = @OTPL_Imp.CustomCryptography.Encrypt(@item.DistrictId.ToString()), userId = @OTPL_Imp.CustomCryptography.Encrypt("0") ,fromDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.fromDate.ToString()), toDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.toDate.ToString())  }) + ">" + item.totalNotice + "</a>" : item.totalNotice.ToString())</td>
+                                <td style="text-align: center;">@Html.Raw(item.totalSealOrder > 0 ? "<a href=" + @Url.Action("CMOSRVCountReportDistrictServiceListCMOCHCPHC", "Report", new {rollId=@OTPL_Imp.CustomCryptography.Encrypt(@item.rollId.ToString()), appCurrStatus = @OTPL_Imp.CustomCryptography.Encrypt("2"),  districtId = @OTPL_Imp.CustomCryptography.Encrypt(@item.DistrictId.ToString()),userId = @OTPL_Imp.CustomCryptography.Encrypt("0") ,fromDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.fromDate.ToString()), toDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.toDate.ToString())  }) + ">" + item.totalSealOrder + "</a>" : item.totalSealOrder.ToString())</td>
+                                <td style="text-align: center;">@Html.Raw(item.totalFIR > 0 ? "<a href=" + @Url.Action("CMOSRVCountReportDistrictServiceListCMOCHCPHC", "Report", new {rollId=@OTPL_Imp.CustomCryptography.Encrypt(@item.rollId.ToString()), appCurrStatus = @OTPL_Imp.CustomCryptography.Encrypt("3"),  districtId = @OTPL_Imp.CustomCryptography.Encrypt(@item.DistrictId.ToString()),userId = @OTPL_Imp.CustomCryptography.Encrypt("0") ,fromDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.fromDate.ToString()), toDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.toDate.ToString()) }) + ">" + item.totalFIR + "</a>" : item.totalFIR.ToString())</td>
+                                <td style="text-align: center;">@Html.Raw(item.TotalLicenseRejected > 0 ? "<a href=" + @Url.Action("CMOSRVCountReportDistrictServiceListCMOCHCPHC", "Report", new {rollId=@OTPL_Imp.CustomCryptography.Encrypt(@item.rollId.ToString()), appCurrStatus = @OTPL_Imp.CustomCryptography.Encrypt("4"),districtId = @OTPL_Imp.CustomCryptography.Encrypt(@item.DistrictId.ToString()),userId = @OTPL_Imp.CustomCryptography.Encrypt("0") ,fromDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.fromDate.ToString()), toDate = @OTPL_Imp.CustomCryptography.Encrypt(@item.toDate.ToString()) }) + ">" + item.TotalLicenseRejected + "</a>" : item.TotalLicenseRejected.ToString())</td>
+
+              
+
+
+            
+            </tr>
+            
+            
+                preValue = item.DistrictName;
+
+            }
+
+            
+            @*<tr id="totalRow">
+              
+                    
+
+                    <td rowspan="@rowSpan" style="text-align: center;"></td>
+                    <td rowspan="@rowSpan" style="text-align: center;"></td>
+                    <td rowspan="@rowSpan"><strong>Total</strong></td>
+
+
+
+                    <td style="text-align: center;">@Model.Sum(i => i.totalInspection)</td>
+                    <td style="text-align: center;">@Model.Sum(i => i.totalNotice)</td>
+                    <td style="text-align: center;">@Model.Sum(i => i.totalSealOrder)</td>
+                    <td style="text-align: center;">@Model.Sum(i =>i.totalFIR)</td>
+                    <td style="text-align: center;">@Model.Sum(i =>i.TotalLicenseRejected)</td>
+
+                
+            </tr>*@
+            
+        
+            
+
+        }
+        else
+        {
+            <tr>
+                <td colspan="8">Record Not Found</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

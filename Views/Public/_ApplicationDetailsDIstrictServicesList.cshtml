@@ -1,0 +1,130 @@
+﻿@model List<CCSHealthFamilyWelfareDept.Models.ApplicationDetailsModel>
+@{
+    int rowSpan = 1, sNo = 0;
+    string preValue = "";
+}
+
+<table class="table table-bordered table-striped">
+    <thead>
+       
+            <tr>
+                <th style="width: 5%; text-align: center;">S.No.</th>
+                <th style="width: 5%; text-align: center;">Application No.</th>
+                <th style="width: 5%; text-align: center;">Application Date</th>
+                <th style="width: 5%; text-align: center;">Applicant Name</th>
+                <th style="width: 5%; text-align: center;">Mobile No.</th>
+
+                @if (ViewBag.AppStatuscurrent == 1)
+                {
+                    <th style="width: 5%; text-align: center;">Approved On</th>
+                }
+                else if (ViewBag.AppStatuscurrent == 2)
+                {
+                    <th style="width: 5%; text-align: center;">Rejected On</th> 
+                    <th style="width: 5%; text-align: center;">Rejection Remark</th>
+                }
+                else if (ViewBag.AppStatuscurrent == 3 || ViewBag.AppStatuscurrent == 4)
+                {
+                    <th style="width: 5%; text-align: center;">Time Limit Days</th> 
+                    <th style="width: 5%; text-align: center;">Received Days</th> 
+                }
+
+                <th style="width: 5%; text-align: center;">Type</th>
+                <th style="width: 5%; text-align: center;">Facility Name</th>
+
+                <th style="width: 5%; text-align: center;">Application Status</th>
+
+            </tr>
+         
+        
+    </thead>
+    <tbody id="tableData">
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var item in Model)
+            {
+                sNo++;
+            <tr>
+                <td style="text-align: center;">@sNo</td>
+                
+                    <td>
+                        @if (ViewBag.serviceId == 1)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormNUH", "Public", new { regisIdNUH = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })"  target="_blank">@item.registrationNo</a>
+                        }
+                        else if (ViewBag.serviceId == 10)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormAGC", "Public", new { regisIdAGC = @item.regisId })"  target="_blank">@item.registrationNo</a> 
+                        }
+                        else if (ViewBag.serviceId == 4)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormDIC", "Public", new { registrationNo = @OTPL_Imp.CustomCryptography.Encrypt(@item.registrationNo.ToString()) })"  target="_blank">@item.registrationNo</a> 
+                        }
+                        else if (ViewBag.serviceId == 7)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormFAP", "Public", new { regisIdFAP = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })"  target="_blank">@item.registrationNo</a> 
+                        }
+                        else if (ViewBag.serviceId == 8)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormMER", "Public", new { regisId = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })"  target="_blank">@item.registrationNo</a> 
+                        }
+                        else if (ViewBag.serviceId == 2)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormILC", "Public", new { regisId = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })" target="_blank">@item.registrationNo</a>
+                        }
+                        else if (ViewBag.serviceId == 3)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormFIC", "Public", new { registrationNo = @OTPL_Imp.CustomCryptography.Encrypt(@item.registrationNo) })" target="_blank">@item.registrationNo</a>
+                        }
+                        else if (ViewBag.serviceId == 6)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormDEC", "Public", new { regisIdDEC = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })"  target="_blank">@item.registrationNo</a> 
+                        }
+                        else if (ViewBag.serviceId == 11)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormICC", "Public", new { regisIdICC = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })"  target="_blank">@item.registrationNo</a>
+                        }
+                        else if (ViewBag.serviceId == 5)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormIMC", "Public", new { regisIdIMC = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })"  target="_blank">@item.registrationNo</a>
+                        }
+                        else if (ViewBag.serviceId == 9)
+                        {
+                            <a href="@Url.Action("PrintApplicationFormMLC", "Public", new { regisIdMLC = @OTPL_Imp.CustomCryptography.Encrypt(@item.regisId.ToString()) })"  target="_blank">@item.registrationNo</a>
+                        }
+                    </td>
+               
+                <td>@item.applicationDate</td>
+                <td>@item.applicantName</td>
+                <td>@item.applicantMobileNo</td>
+                @if (ViewBag.AppStatuscurrents == 1)
+                {
+                    <td>@item.approvedDate</td>
+                }
+                else if (ViewBag.AppStatuscurrent == 2)
+                {
+                    <td>@item.rejectedDate</td>
+                    <td>@item.rejectedRemark</td>
+                }
+                else if (ViewBag.AppStatuscurrent == 3 || ViewBag.AppStatuscurrent == 4)
+                {
+                    <td>@item.timeLimitDays</td>
+                    <td>@item.receivedDays</td>
+                }
+
+
+                <td>@item.HospitalName</td>
+                <td>@item.opdAdd</td>
+                <td>@item.applicationStatus</td>
+
+            </tr> 
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="@(ViewBag.appCurrStatus == 0 ? 5 : ViewBag.appCurrStatus == 1 ? 6 : 7)">Record Not Found</td>
+            </tr>
+        }
+    </tbody>
+</table>

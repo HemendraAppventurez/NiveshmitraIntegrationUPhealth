@@ -1,0 +1,340 @@
+﻿@model List<CCSHealthFamilyWelfareDept.Models.NUHDetailsModel>
+@{
+    ViewBag.Title = "UploadImageApplicationCountListNUH";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@using CCSHealthFamilyWelfareDept.Models;
+@{
+    int sNo = 0;
+    SessionManager SM = new SessionManager();
+    
+}
+
+<style>
+    .webgrid-header a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #divDataList .table > thead > tr > th:last-child {
+        width: 8%;
+    }
+
+    #divDataList .table > tbody > tr > td:last-child {
+        text-align: center;
+    }
+
+    #uploadbutton {
+        background: #00c3db none repeat scroll 0 0;
+        border-radius: 2px;
+        text-transform: uppercase;
+        box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(0,0,0,.3);
+        color: white;
+        transition-duration: .2s;
+        font-size: 23px;
+    }
+
+    #removebutton {
+        background: #db0000 none repeat scroll 0 0;
+        border-radius: 2px;
+        text-transform: uppercase;
+        box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(0,0,0,.3);
+        color: white;
+        transition-duration: .2s;
+        font-size: 23px;
+    }
+
+    ul.circle li a img {
+        margin: 0 auto 5px;
+        display: block;
+        background: #0ea7bc;
+        border-radius: 7px;
+        padding: 3px;
+        width: 500px;
+    }
+
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        #myImg:hover {
+            opacity: 0.7;
+        }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content, #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @@-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0);
+        }
+
+        to {
+            -webkit-transform: scale(1);
+        }
+    }
+
+    @@keyframes zoom {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* 100% Image Width on Smaller Screens */
+    @@media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+</style>
+
+
+
+<link href="~/js/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="~/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#tblCountList').DataTable({
+
+            "ordering": true,
+            columnDefs: [{
+                orderable: false,
+                targets: "no-sort"
+            }]
+
+        });
+
+        $('#tblCountList1').DataTable({
+
+            "ordering": true,
+            columnDefs: [{
+                orderable: false,
+                targets: "no-sort"
+            }]
+
+        });
+
+        //For CMO
+        var table = $('#tblCountList').DataTable();
+
+        //Turning Off ALL event listeners for the Name Table Cell
+        $(".targetHeaderCell").off();
+
+        //Adding cursor class to testSpan and Removing Cursor class from overall header
+        //$(".targetHeaderCell").css("cursor", "default");
+        $("#testSpan").css("cursor", "pointer");
+        var booleanSortCol1 = false;
+
+        // Attaching CLICK Event Handler on Name Span
+        $("#testSpan").on("click", function () {
+
+            if (booleanSortCol1 == false) {
+                table.order([0, 'desc']).draw();
+                booleanSortCol1 = true;
+            }
+            else {
+                table.order([0, 'asc']).draw();
+                booleanSortCol1 = false;
+            }
+        });
+
+        // For Admin
+        var table1 = $('#tblCountList1').DataTable();
+
+        //Turning Off ALL event listeners for the Name Table Cell
+        $(".targetHeaderCell1").off();
+
+        //Adding cursor class to testSpan and Removing Cursor class from overall header
+        //$(".targetHeaderCell").css("cursor", "default");
+        $("#testSpan1").css("cursor", "pointer");
+        var booleanSortCol1r = false;
+
+        // Attaching CLICK Event Handler on Name Span
+        $("#testSpan").on("click", function () {
+
+            if (booleanSortCol1r == false) {
+                table1.order([0, 'desc']).draw();
+                booleanSortCol1r = true;
+            }
+            else {
+                table1.order([0, 'asc']).draw();
+                booleanSortCol1r = false;
+            }
+        });
+    });
+
+
+</script>
+
+<div class="content-title">
+    <h3 class="main-title">
+         <div class="col-md-12 text-left">चिकित्सा प्रतिष्ठानों (49 बेड्स तक) पर सूचनाओं का प्रदर्शन  <span class="small display-block">Display Of Information  of Medical Establishment (for upto 49 Beds)</span></div>
+           <a href="@Url.Action("adminImageCountReportDistrictWise", "Report")" class="btn btn-primary btn-sm pull-right btnHistoryBack" style="margin-top: 0px;">Back</a>
+
+         <button type="button" class="btn btn-primary btn-sm pull-right btnHistoryBack" id="btnExportExcel">Export Excel</button>
+    </h3>
+</div>
+<div id="content" class="dashboard padding-20 margin-bottom-50">
+
+    @if (Model != null && Model.Count() > 0)
+    {
+        
+        <div class="row">
+            <div style="max-height: 700px; overflow: scroll">
+                <table id="tblCountList1" border="1" class="table-user-information table table-bordered table-striped" cellpadding="2" cellspacing="0" width="99%" style="font-size: 13px;">
+                    <thead style="background: #237382; color: #fff; padding: 5px;">
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>District</th>
+                            <th class="no-sort"><strong>Application No</strong></th>
+                            <th class="no-sort"><strong>Establishment Name</strong></th>
+                            <th>Uploaded Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Count > 0)
+                        {
+                            foreach (var item in Model)
+                            {
+                                sNo++;
+                            <tr>
+                                <td style="text-align: center;">@sNo</td>
+                                <td>@item.DistrictName</td>
+                                <td>@item.registrationNo</td>
+                                <td>@item.establishmentName</td>
+
+                                <td>
+                                    @if (!string.IsNullOrEmpty(item.uploadimagePath))
+                                    {
+                                        <img src="@item.uploadimagePath.Replace("~", "/online")" height="100" width="100" onclick="GetFullImage(this)" />
+                                    }
+                                    else
+                                    {
+                                        <span>Not Uploaded</span>
+                                    }
+                                </td>
+                            </tr>                          
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td>Record Not Found</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div id="imagemodal" class="modal" style="width: 99%; height: 664px; overflow-y: scroll;">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <script>
+            var modal = document.getElementById("imagemodal");
+            var modalImg = document.getElementById("img01");
+            function GetFullImage(obj) {
+                modal.style.display = "block";
+               
+                modal.style.margin = "5% 1% 1% 0%";
+                modal.style.padding = "5% 1% 1% 23%";
+                modalImg.src = $(obj).attr('src');
+            }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+        </script>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <span class="text-danger form-control" style="font-weight: 600; font-size: 18px;">No record found !</span>
+            </div>
+        </div>
+    }
+</div>
+
+
+<script>
+    $("#btnExportExcel").click(function () {
+
+        window.location.href = '@Url.Action("ExportToExcelCountImageUpload49BedsLessApplication", "Report")';
+
+       })
+</script>
+
+
+
+

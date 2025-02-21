@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "niveshmitraregistration";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("niveshmitraregistration", "Account", FormMethod.Post, new { @id = "frmniveshMitra", @style = "height:220px;" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Control ID:</label>
+                <input type="text" id="TxtControlID" name="TxtControlID" value="UPSWP220001922" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Unit ID:</label>
+                <input type="text" id="TxtUnitID" name="TxtUnitID" value="UPSWP22000192222" class="form-control" />
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Service ID:</label>
+                <input type="text" id="TxtServiceID" name="TxtServiceID" value="SC33001" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Request ID:</label>
+                <input type="text" id="TxtRequestID" name="TxtRequestID" value="22000192222330010001" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <a href="@Url.Action("Receipt", "NUH", new { sessionkey="Zyw6OA0k9TvnWS78GOPac2KU6wZBEm/Xv+5PV6DIafb6P/9a6nhAOXmern38gJepeLhow95EDzVyEWubjP5UG+zjSbegNNjK7wZW/5+j9IoqnAHkX0txA1y0bULuvY1nRoV4lYWJckq+LBB1RlCNhLzcCANuY0J67/YLaJ5w3v0FWhq79jNUtPLIZsc786/gHmsjROl9rnUThWX10z355KDaN/j0YLFCDV0OItN8itTDRO5ShH+Sv7ArNvoq4GS+DsNseEUhscC3SSnCSQtdx0KhiicNILx22bWZlM41PIqBTg+3A38ghUtRS1f/uIHedskrRASrttX3yx09BEG/uLBgVChUgPlTo1/XJwA595w=" })"  class="btn btn-success" target="_blank">Download Receipt</a>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    <div class="row" style="float: right; margin-right: 164px;">
+
+        <div class="col-md-4">
+
+
+
+            <input type="submit" id="btnSubmit" value="Submit" class="btn btn-primary" />
+            @* <ul>
+                <li><a href="#" class="btn btn-primary" onclick="PostData();">Send User Detail</a></li>
+            </ul>*@
+        </div>
+    </div>
+    
+}
+

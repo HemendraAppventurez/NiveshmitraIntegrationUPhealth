@@ -1,0 +1,108 @@
+D:\Riya\SVN_2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\Riya\SVN_2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\Riya\SVN_2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\Riya\SVN_2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\Riya\SVN_2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+E:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+E:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+E:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+E:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+E:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\itextsharp.dll
+E:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+F:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+F:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+F:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+F:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+F:\Gaurav\SVN 2012\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.dll
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.dll
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.pdb
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.xml
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.pdb
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.xml
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\Poject\ProductionWork\Janhit_Code\source code\CCSHealthFamilyWelfareDept\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.dll
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.dll
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.pdb
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.xml
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.pdb
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.xml
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.dll
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.dll
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.pdb
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.xml
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.pdb
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.xml
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\Work On Janhit Portal\02-01-2024\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.xml
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.xml
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.xml
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.xml
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\av-janhit-portal20March2024FinalCode File\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.xml
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.pdb
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.xml
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csprojResolveAssemblyReference.cache
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\Shyam System File\Live Projects Work 23 Jan 2024\UP-Health Application\LiveJanhitCode\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.pdb
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.pdb
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.Core.xml
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.pdb
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\AWSSDK.SimpleNotificationService.xml
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.pdb
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CCSHealthFamilyWelfareDept.dll.config
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\bin\stdole.dll
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csproj.AssemblyReference.cache
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealthFamilyWelfareDept.csproj.CoreCompileInputs.cache
+D:\Hemendra\Applications\NIveshmitra3.0 Integration UP health08may2024\av-janhit-portal\CCSHealthFamilyWelfareDept\obj\Debug\CCSHealt.0A231ADD.Up2Date

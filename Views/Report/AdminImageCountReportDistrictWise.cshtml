@@ -1,0 +1,144 @@
+﻿@model CCSHealthFamilyWelfareDept.Models.NUHDetailsModel
+@{
+    ViewBag.Title = "AdminImageCountReportDistrictWise";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<div class="content-title">
+    <h3 class="main-title">
+        <div class="col-md-12 text-left">चिकित्सा प्रतिष्ठानों (49 बेड्स तक) पर सूचनाओं का प्रदर्शन  <span class="small display-block">Total Count Report Of Image Upload District Wise(for upto 49 Beds)</span></div>
+
+    </h3>
+</div>
+<div id="content" class="dashboard padding-20 margin-bottom-50">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="title elipsis">
+                        <h4>Filter Criteria</h4>
+                    </span>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4" style="display: none">
+                            <div class="form-group">
+                                <label>Application No.</label>
+                                <input type="text" id="txtAppNumber" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>District</label>
+                                @Html.DropDownList("districtId", (IEnumerable<SelectListItem>)ViewBag.DLLDistrict, "--Select All--", new { @class = "form-control select", @readonly = "true" })
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>From<span class="star"></span></label>
+                                @Html.TextBoxFor(m => m.fromDate, new { @class = "datepicker-here form-control", @data_language = "en", @placeholder = "dd/mm/yyyy", @readonly = "readonly" })
+                                <span id="fdate"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>To <span class="star"></span></label>
+                                @Html.TextBoxFor(m => m.toDate, new { @class = "datepicker-here form-control", @data_language = "en", @placeholder = "dd/mm/yyyy", @readonly = "readonly" })
+                                <span id="tdate"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button type="button" id="btnSearch" class="btn btn-block btn-success">Search</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button type="button" id="btnRefresh" class="btn btn-block btn-danger">Reset</button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-block btn-warning" id="btnExportExcel">Export Excel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="panel-body">
+                <div id="DIV-ApplicationList">
+                    @Html.Action("AdminImageCountReportDistrictWiseList", "Report")
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<script>
+    $(function () {
+
+        if ('@TempData["SuccessMsg"]' != '') {
+            swal("", "@TempData["SuccessMsg"]", "success");
+        }
+        if ('@TempData["Message"]' != '') {
+            swal("", "@TempData["Message"]", "success");
+        }
+
+        $("#btnExportExcel").click(function () {
+
+            window.location.href = '@Url.Action("ExportToExcelCountImageUpload49BedsLess", "Report")';
+
+        });
+
+        $("#btnSearch").click(function () {
+            bindApplicationList($("#fromDate").val().trim(), $("#toDate").val().trim(), $('#districtId').val());
+        });
+        $("#btnRefresh").click(function () {
+            $("#fromDate").val('');
+            $("#toDate").val('');
+
+
+
+
+            bindApplicationList($("#fromDate").val().trim(), $("#toDate").val().trim(), $('#districtId').val());
+
+        });
+
+    });
+
+    //function bindApplicationList(_registrationNo, _fromDate, _toDate, _district) {
+    function bindApplicationList(_fdate, _tdate, _district) {
+        var img = "<img src='@Url.Content("~/Images/loadingImg.gif")' alt='Loading..' style='margin-left:40%; margin-top:25px' />";
+        $('#DIV-ApplicationList').html(img);
+
+        $.ajax({
+            url: '@Url.Action("AdminImageCountReportDistrictWiseList", "Report")',
+
+            data: { fromdate: _fdate, todate: _tdate, district: _district },
+
+            type: 'GET',
+            dataType: 'HTML'
+        })
+        .success(function (returndata) {
+            $('#DIV-ApplicationList').html(returndata);
+        })
+        .error(function (xhr, status) {
+            $('#DIV-ApplicationList').html('');
+            swal("", 'Details Not Found !', "warning");
+        });
+    }
+
+</script>
+
+
+
